@@ -1,0 +1,64 @@
+*COMANDOS GIT - WINDOWS*
+
+DIR - Listar todas as pastas
+CD NOME_DO_CAMINHO - Acessar diretórios
+CD.. - Retroceder uma pasta na navegação
+CLS - Limpar o terminal
+MKDIR NOME_DA_PASTA - Criar pasta no diretório
+ECHO HELLO (conteúdo do arquivo) > HELLO.TXT (nome e tipo do arquivo)
+DEL NOME_DA_PASTA - Deleta todo conteúdo de uma pasta
+RMDIR NOME_DA_PASTA /S /Q - Deleta repositório (pasta) completo
+
+
+GIT INIT - Inicializar o git na pasta desejada
+LS -A - Mostra arquivos ocultos na pasta (Exemplo a pasta .git)
+GIT CONFIG --GLOBAL USER.EMAIL "SEU EMAIL" - Configuração inicial do git
+GET CONFIG --GLOBAL USER.NAME "SEU USER" - Configuração inicial do git
+
+OBS: Utilizou-se software Typora para digitar no formato do HTML
+
+
+GIT STATUS - Verificar a situação dos arquivos e se a Work Tree está limpa.
+
+
+GIT ADD * - Adicionar todos os arquivos ao git
+GIT ADD NOME_ARQUIVO - Adicionar arquivo no git
+GIT COMMIT -M "PASSAR_STRING (EX: COMMIT INICIAL)" - Realizar o commit
+MV NOME_ARQUIVO ./NOME_PASTA_DESTINO/ - Mover arquivo de uma pasta pra outra
+
+
+GIT CONFIG --LIST - Listar a configurações do GIT
+GIT CONFIG --GLOBAL -UNSET USER.EMAIL - Remover e-mail da configuração do GIT
+GIT CONFIG --GLOBAL -UNSET USER.NICKNAME - Remover apelido da configuração do GIT
+
+GIT CONFIG --GLOBAL USER.EMAIL "seuemail@gmail.com" - Inserir e-mail na configuração
+GIT CONFIG --GLOBAL USER.NICKNAME "edsonhrf" - Inserir apelido na configuração
+
+
+ERRO - fatal: protocol 'https' is not supported
+SOLUCAO -  git remote set-url origin COLAR_URL_DO_REPOSITORIO
+
+ERRO - Another git process seems to be running in this repository
+SOLUCAO - rm -f .git/index.lock
+
+
+Passo a passo para colocar arquivos alterados no GIT
+
+1º Alterar o arquivo localmente
+2º Git status (Estará como modified no terminal)
+3º Git add * (Adiciona tudo que houve modificação)
+4º Git status (Estará como pronto para comitar)
+5º Git commit -m "descrição do commit" - Realiza commit
+6º Git push origin master (Envia o arquivo ao Github)
+
+
+
+*COMANDOS GIT - LINUX*
+
+LS - Listar todas as pastas
+CD NOME_DO_CAMINHO - Acessar diretórios
+CD.. - Retroceder uma pasta na navegação
+CLEAR (CTRL + L) - Limpar o terminal
+SUDO SU (PARA ENTRAR COMO ROOT) + MKDIR NOME_DA_PASTA - Criar pasta no diretório
+RM RF NOME_DA_PASTA/ - Deleta todo repositório (pasta) e as pastas que estão dentro dele
+
